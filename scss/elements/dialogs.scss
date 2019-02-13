@@ -1,0 +1,25 @@
+.nes-dialog {
+  padding: 1.5rem 2rem;
+
+  > .backdrop,
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  &.is-rounded {
+    @include rounded-corners();
+
+    &.is-dark {
+      @include rounded-corners(true);
+    }
+  }
+  &.is-dark {
+    color: $background-color;
+    background-color: $base-color;
+    border-color: $background-color;
+  }
+}

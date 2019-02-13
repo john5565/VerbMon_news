@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="NES.css is a NES-style CSS Framework." />
+    <meta name="keywords" content="html5,css,framework,sass,NES,8bit" />
+    <meta name="author" content="© 2018 B.C.Rikko" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" sizes="196x196" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+
+    <title>VERBMON</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
+    <link href="./demo/style.css" rel="stylesheet" />
+    <script async src="./demo/lib/highlight.js"></script>
+    <link async href="./demo/lib/highlight-theme.css" rel="stylesheet" />
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NES.css" />
+    <meta property="og:url" content="https://nostalgic-css.github.io/NES.css/" />
+    <meta property="og:description" content="NES-style CSS Framework | ファミコン風CSSフレームワーク" />
+    <meta property="og:image" content="https://user-images.githubusercontent.com/5305599/49061716-da649680-f254-11e8-9a89-d95a7407ec6a.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@bc_rikko" />
+    <meta name="twitter:creator" content="@bc_rikko" />
+    <meta name="twitter:image" content="https://user-images.githubusercontent.com/5305599/49061716-da649680-f254-11e8-9a89-d95a7407ec6a.png" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41640153-4"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-41640153-4");</script>
+  </head>
+
+  <body>
+    <header>
+      <h1><i class="snes-jp-logo brand"></i>VERBMON V.14</h1>
+    </header>
+
+
+       <section class="nes-container code" id="code-buttons">
+      <pre class="sample-code"><code class="html">&lt;button type=&quot;button&quot; class=&quot;nes-btn&quot;&gt;Normal&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;nes-btn is-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;nes-btn is-success&quot;&gt;Success&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;nes-btn is-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;nes-btn is-error&quot;&gt;Error&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;nes-btn is-disabled&quot;&gt;Disabled&lt;/button&gt;</code></pre>
+    </section>
+
+    <section class="nes-container with-title">
+      <h2 class="title">Containers</h2>
+      <div class="containers" id="containers">
+VerbMon est un jeu de plateforme éducatif réalisé pour un projet scolaire par des étudiants en programmation, en design et bien d'autres métiers. il est destiné à tout ceux qui désire apprendre les verbes irrégulier en anglais tout en s'amusant! Actuellement le jeu est uniquement disponible en français, mais nous avons prévu de le rendre accessible dans beaucoups d'autres langues.
+Soutenez nous sur kickstarter pour le publier sur steam!
+      </div>
+
+      <span class="nes-balloon from-right copied" id="copied-containers">Copied!</span>
+    </section>
+    <section class="nes-container code" id="code-containers">
+      <pre class="sample-code"><code class="html">&lt;div class=&quot;nes-container with-title is-centered&quot;&gt;
+  &lt;p class=&quot;title&quot;&gt;Container.is-centered&lt;/p&gt;
+  &lt;p&gt;Good morning. Thou hast had a good night's sleep, I hope.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;nes-container is-dark with-title&quot;&gt;
+  &lt;p class=&quot;title&quot;&gt;Container.is-dark&lt;/p&gt;
+  &lt;p&gt;Good morning. Thou hast had a good night's sleep, I hope.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;nes-container is-rounded&quot;&gt;
+  &lt;p&gt;Good morning. Thou hast had a good night's sleep, I hope.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;nes-container is-rounded is-dark&quot;&gt;
+  &lt;p&gt;Good morning. Thou hast had a good night's sleep, I hope.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+    </section>
+	 <section class="nes-container with-title">
+      <h2 class="title">Links</h2>
+      <div id="buttons">
+		<button type="button" class="nes-btn is-disabled">Kickstarter  </button>
+		<button type="button"  onclick="location.href='https://terribilistudio.wordpress.com/';" class="nes-btn is-primary">Website</button>
+		<button type="button" class="nes-btn is-disabled">The team</button>
+        <button type="button" class="nes-btn is-disabled">Steam</button>
+      </div>
+
+      <span class="nes-balloon from-right copied" id="copied-buttons">Copied!</span>
+    </section>
+
+    <footer class="footer">
+      <p>
+        <a href="https://kuroeveryday.blogspot.com/" target="_blank">TERRIBILIS STUDIO</a>
+      </p>
+    </footer>
+  </body>
+  <script>
+    function copyToClipboard(element) {
+      var divToClipboard = document.querySelector('#' + element);
+      var el = document.createElement('textarea');
+      el.value = divToClipboard.innerHTML;
+      el.setAttribute('readonly', '');
+      el.style.position = 'absolute';
+      el.style.left = '-9999px';
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+      let copiedEl = document.querySelector("#copied-" + element);
+      copiedEl.style.display = 'block'
+      setTimeout(function() {
+        copiedEl.style.display = 'none'
+      }, 2000);
+    }
+
+    window.onload = function() {
+      var link = document.querySelector("a.github-link");
+      var octocat = document.querySelector("a.github-link > i.nes-octocat");
+      link.addEventListener("mouseover", function() {
+        octocat.classList.add("animate");
+      });
+      link.addEventListener("mouseout", function() {
+        octocat.classList.remove("animate");
+      });
+
+      var elements = ['buttons', 'containers', 'radios', 'checkboxes', 'avatars', 'form',
+        'balloons', 'lists', 'table', 'progress', 'badges', 'reaction', 'sns', 'others', 'controllers'];
+      for (var i = 0; i < elements.length; i++) {
+        let showEl = document.querySelector("#show-" + elements[i] + "-code");
+        let codeEl = document.querySelector("#code-" + elements[i]);
+        showEl.addEventListener("click", function() {
+          codeEl.style.display = codeEl.style.display === 'block' ? 'none' : 'block';
+        }, false);
+      }
+    }
+  </script>
+</html>
