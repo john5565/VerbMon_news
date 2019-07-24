@@ -36,7 +36,7 @@
 
   <body>
     <header>
-      <h1>T.A. VERBMON V.14</h1>
+      <h1>T.A. VERBMON V.21</h1>
     </header>
 
 
@@ -52,17 +52,15 @@
     <section class="nes-container with-title">
       <h2 class="title">Info</h2>
       <div class="containers" id="containers">
-Français :
+	  NOW IN KICKSTARTER AND SOON IN STEAM THIS HOLIDAYS!
+	  <br>
+Story :
 <br>
-Timmy adventures - VerbMon est un jeu de plateforme éducatif réalisé pour un projet scolaire par des étudiants en programmation, en design et bien d'autres métiers. il est destiné à tout ceux qui désire apprendre les verbes irrégulier en anglais tout en s'amusant! Actuellement le jeu est uniquement disponible en français, mais nous avons prévu de le rendre accessible dans beaucoups d'autres langues.
-Soutenez nous sur kickstarter pour le publier sur steam!
-<br><br>
-English:
-<br>
-Timmy adventures - VerbMon is an educational platform game created by students in programming, design and other fields for a school project.
-It is aimed for everyone who wants to learn the irregular verbs in english while having fun !
-For now the game is only available in french but we intend to make it understandable in many other languages.
-Support us on kickstarter so we can publish it on steam !
+Hello, my name is Timmy, a young cat, I decided to enroll in the largest and most prestigious VerbMon hunter school.
+In this school, I learn irregular verbs in English and they help me to capture VerbMons.
+Trainers terrorize the inhabitants of the galaxy. My dream is to send themein prison
+and become the best VerbMon trainer.
+
       </div>
 
       <span class="nes-balloon from-right copied" id="copied-containers">Copied!</span>
@@ -87,10 +85,10 @@ Support us on kickstarter so we can publish it on steam !
 	 <section class="nes-container with-title">
       <h2 class="title">Links</h2>
       <div id="buttons">
-		<button type="button" class="nes-btn is-disabled">Kickstarter  </button>
 
-		<a href="https://terribilistudio.wordpress.com/games/timmy-adventures-verbmon/" target="_blank" class="nes-btn is-primary">Website</a>
-		<a href="https://terribilistudio.wordpress.com/about/" target="_blank" class="nes-btn is-primary">The team</a>
+		<a href="https://www.kickstarter.com/projects/1647708169/timmys-adventures-verbmon" target="_blank" class="nes-btn is-primary">Kickstarter</a>
+		<a href="http://terribilisstudio.fr/" target="_blank" class="nes-btn is-primary">Website</a>
+		<a href="http://terribilisstudio.fr/credits" target="_blank" class="nes-btn is-primary">The team</a>
         <button type="button" class="nes-btn is-disabled">Steam</button>
       </div>
 
@@ -99,7 +97,7 @@ Support us on kickstarter so we can publish it on steam !
 
     <footer class="footer">
       <p>
-        <a href="https://terribilistudio.wordpress.com/" target="_blank">TERRIBILIS STUDIO</a>
+        <a href="http://terribilisstudio.fr/" target="_blank">TERRIBILIS STUDIO</a>
       </p>
     </footer>
   </body>
@@ -121,7 +119,6 @@ Support us on kickstarter so we can publish it on steam !
         copiedEl.style.display = 'none'
       }, 2000);
     }
-
     window.onload = function() {
       var link = document.querySelector("a.github-link");
       var octocat = document.querySelector("a.github-link > i.nes-octocat");
@@ -131,7 +128,6 @@ Support us on kickstarter so we can publish it on steam !
       link.addEventListener("mouseout", function() {
         octocat.classList.remove("animate");
       });
-
       var elements = ['buttons', 'containers', 'radios', 'checkboxes', 'avatars', 'form',
         'balloons', 'lists', 'table', 'progress', 'badges', 'reaction', 'sns', 'others', 'controllers'];
       for (var i = 0; i < elements.length; i++) {
